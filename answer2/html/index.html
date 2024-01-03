@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>answer2</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 2px;
+        box-sizing: border-box;
+      }
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      img {
+        width: 90%;
+        height: 100%;
+      }
+      @media (max-width: 500px) {
+        .picture {
+          width: 100%;
+        }
+      }
+      @media (min-width:500px) and (max-width: 800px) {
+        .picture {
+          width: 50%;
+        }
+      }
+      @media (min-width: 800px) {
+        .picture {
+          width: 33.33%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gallery">
+      <div class="picture">
+        <img
+          src="https://fastly.picsum.photos/id/879/200/300.jpg?hmac=07llkorYxtpw0EwxaeqFKPC5woveWVLykQVnIOyiwd8"
+          alt="image"
+        />
+      </div>
+      <div class="picture">
+        <img
+          src="https://fastly.picsum.photos/id/879/200/300.jpg?hmac=07llkorYxtpw0EwxaeqFKPC5woveWVLykQVnIOyiwd8"
+          alt="image"
+        />
+      </div>
+      <div class="picture">
+        <img
+          src="https://fastly.picsum.photos/id/879/200/300.jpg?hmac=07llkorYxtpw0EwxaeqFKPC5woveWVLykQVnIOyiwd8"
+          alt="image"
+        />
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>answer5</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .box {
+        text-align: center;
+        color: white;
+        padding-top: 15px;
+      }
+      .box1 {
+        background-color: grey;
+      }
+      .box2 {
+        background-color: lightgreen;
+      }
+      .box3 {
+        background-color: lightsalmon;
+      }
+      .box4 {
+        background-color: grey;
+      }
+      @media (min-width: 800px) {
+        .container1 {
+          display: flex;
+        }
+        .container2 {
+          width: calc(100vw - 150px);
+        }
+        .box1 {
+          height: 100vh;
+          width: 75px;
+        }
+        .box2 {
+          height: 50vh;
+          width: calc(100vw - 150px);
+        }
+        .box3 {
+          height: 50vh;
+        }
+        .box4 {
+          height: 100vh;
+          width: 75px;
+        }
+      }
+      @media (max-width: 800px) {
+        .container1 {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          height: 100vh;
+          
+        }
+       .box{
+        height: 50px;
+       }
+        .last-item {
+          margin-top: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container1">
+      <div class="box box1">Box1</div>
+      <div class="container2">
+        <div class="box box2">Box2</div>
+        <div class="box box3">Box3</div>
+      </div>
+      <div class="box box4 last-item">Box4</div>
+    </div>
+  </body>
+</html>
